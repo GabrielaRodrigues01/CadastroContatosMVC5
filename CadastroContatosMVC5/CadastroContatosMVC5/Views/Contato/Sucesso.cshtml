@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Contato cadastrado";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+
+        <div class="card-custom text-center">
+
+            <div class="success-icon mb-3">
+                <span>✓</span>
+            </div>
+
+            <h4 class="mb-2">Contato cadastrado com sucesso!</h4>
+
+            <p class="text-muted mb-4">
+                @TempData["MensagemSucesso"]
+            </p>
+
+            <div class="d-flex justify-content-center gap-2">
+
+                @Html.ActionLink("Novo cadastro", "Index", "Contato", null, new { @class = "btn btn-primary" })
+
+                @Html.ActionLink("Voltar para o formulário", "Index", "Contato", null, new { @class = "btn btn-outline-secondary" })
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,125 @@
+﻿/* ===== PALETA VERMELHA ===== */
+:root {
+    --primary-red: #c62828;
+    --primary-red-dark: #8e0000;
+    --primary-red-light: #ff5f52;
+    --bg-light: #f5f5f5;
+}
+
+/* ===== NAVBAR ===== */
+.navbar-red {
+    background: linear-gradient(90deg, var(--primary-red-dark), var(--primary-red));
+    border: none;
+}
+
+    .navbar-red .navbar-brand {
+        font-size: 20px;
+        letter-spacing: 0.5px;
+    }
+
+/* ===== BODY ===== */
+body {
+    background-color: var(--bg-light);
+}
+
+/* ===== CARDS ===== */
+.card-custom {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+/* ===== BOTÕES ===== */
+.btn-primary {
+    background: linear-gradient(90deg, var(--primary-red), var(--primary-red-light));
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+
+    .btn-primary:hover {
+        background: linear-gradient(90deg, var(--primary-red-dark), var(--primary-red));
+    }
+
+.btn-outline-secondary {
+    border-radius: 8px;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    background-color: transparent;
+}
+
+    .btn-outline-secondary:hover {
+        background: linear-gradient(90deg, var(--primary-red), var(--primary-red-light));
+        border-color: var(--primary-red);
+        color: #fff;
+    }
+
+/* ===== TABELA ===== */
+.table-custom {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+    .table-custom thead {
+        background-color: #fafafa;
+    }
+
+    .table-custom th {
+        font-weight: 600;
+        color: #555;
+    }
+
+    .table-custom tbody tr:hover {
+        background-color: #fff5f5;
+    }
+
+/* ===== INPUT BUSCA ===== */
+.input-search {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+}
+
+    .input-search:focus {
+        border-color: var(--primary-red);
+        box-shadow: 0 0 0 0.2rem rgba(198, 40, 40, 0.2);
+    }
+
+/* ===== HEADER DA PAGE ===== */
+.page-header {
+    margin-bottom: 25px;
+}
+
+    .page-header h2 {
+        font-weight: 600;
+        color: #333;
+    }
+
+    .page-header p {
+        color: #777;
+    }
+
+/* ===== FOOTER ===== */
+footer {
+    background: #ffffff;
+}
+
+.success-icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 16px auto;
+    border-radius: 50%;
+    background-color: #fdecea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .success-icon span {
+        color: var(--primary-red);
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1;
+    }
